@@ -10,6 +10,7 @@ function App() {
 	const [input, setInput] = useState("");
 	const agregarInput = (val) => {
 		setInput(input + val);
+		console.log(val);
 	};
 
 	const calcularResultado = () => {
@@ -37,7 +38,7 @@ function App() {
 					<Boton manejarClick={agregarInput}>4</Boton>
 					<Boton manejarClick={agregarInput}>5</Boton>
 					<Boton manejarClick={agregarInput}>6</Boton>
-					<Boton manejarClick={agregarInput}>+</Boton>
+					<Boton manejarClick={agregarInput}>-</Boton>
 				</div>
 				<div className="fila">
 					<Boton manejarClick={agregarInput}>7</Boton>
